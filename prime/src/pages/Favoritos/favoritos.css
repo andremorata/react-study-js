@@ -1,0 +1,41 @@
+.favoritos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 2rem;
+  width: 100%;
+}
+
+.favoritos .items {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+  width: 800px;
+}
+
+.favoritos .item {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 1rem;
+}
+
+.favoritos .item img {
+  height: 150px;
+  border-radius: 10px;
+}
+
+.favoritos .item .content  {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.favoritos .item .content .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;  
+}
