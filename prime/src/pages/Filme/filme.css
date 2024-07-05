@@ -1,0 +1,33 @@
+.filme-info {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.filme-info h1 {
+  margin-bottom: 10px;
+}
+
+.filme-info img {
+  width: 100%;
+}
+
+.filme-info h2 {
+  margin-top: 20px;
+}
+
+.filme-info p {
+  margin-top: 10px;
+}
+
+.filme-info .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  outline: none;
+}

@@ -26,3 +26,37 @@ code {
   height: 100vh;
   background-color: #f0f0f0;
 }
+
+.info {
+  background-color: #1d55e2 !important;
+}
+
+.warning {
+  background-color: #f5a623 !important;
+}
+
+.error, .danger {
+  background-color: #d0021b !important;
+}
+
+.success {
+  background-color: #417505 !important;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #868a95;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  display: block;
+  transition: all 0.5s;
+  height: 45px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
