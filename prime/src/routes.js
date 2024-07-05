@@ -4,6 +4,7 @@ import Header from './components/Header';
 
 import Home from './pages/Home';
 import Filme from './pages/Filme';
+import Erro from './pages/Erro';
 
 export default function RoutesApp() {
   return (
@@ -12,6 +13,8 @@ export default function RoutesApp() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/filme/:id" element={<Filme />} />
+
+        <Route path="*" element={<Erro />} />
       </Routes>
     </BrowserRouter>
   );
