@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import api from "../../services/api";
+import { toast } from "react-toastify";
 
 import './filme.css';
 
@@ -30,7 +31,6 @@ export default function Filme() {
             navigate('/', { replace: true });
           }
         });
-
     }
 
     loadFilme();
@@ -48,13 +48,13 @@ export default function Filme() {
     const hasFilme = filmesSalvos.some(filmeSalvo => filmeSalvo.id === filme.id);
 
     if (hasFilme) {
-      alert('Você já possui esse filme salvo.');
+      toast.warn('Você já possui esse filme salvo!');
       return;
     }
 
     filmesSalvos.push(filme);
     localStorage.setItem(entry, JSON.stringify(filmesSalvos));
-    alert('Filme salvo com sucesso!');
+    toast.success('Filme salvo com sucesso!');
   }
 
   if (loading) {
